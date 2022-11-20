@@ -24,8 +24,8 @@ Colemak layout, with minor changes to locations on ctl/alt/win/space/enter to su
 
 **Layer 2:**
 
-Not happy with this layer currently, will leave function keys on here but want to move 
+Not happy with this layer currently, will leave function keys on here but want to move all sorts of things around (see to do list)
 
 **Layer 3:**
 
-TBC
+TBC - currently arrow keys
