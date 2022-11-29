@@ -10,6 +10,9 @@ qmk flash -kb sofle -km via
 
 ## To Do List
 Number pad on layer 2
+Move control to outside column, remap other keys elsewhere.
+Consider using the hold mod option on space and enter
+Dedicated cut/copy/paste/excel paste special macros
 
 
 ## LAYOUT DESCRIPTION
