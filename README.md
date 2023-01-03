@@ -8,12 +8,9 @@ From the default QMK environment, use the following command to flash the most re
 qmk flash -kb sofle -km via
 ```
 
-I've also adjusted the TAPPING_TERM time to 250ms within: 
-```
-qmk_firmware/keyboards/sofle/rev1/config.h
-``` 
+I've also adjusted the TAPPING_TERM time to 250ms within ```qmk_firmware/keyboards/sofle/rev1/config.h```.
 
-This was done to counter all sorts of false triggers for "holding" when trying mod-taps on the thumbs. For whatever reason the default on the Sofle is 100ms instead of the QMK default of 200.
+This was done to counter all sorts of false triggers for "holding" when trying mod-taps on the thumbs. For whatever reason the default on the Sofle is 100ms instead of the QMK default of 200ms.
 
 
 ## To Do List
@@ -21,7 +18,10 @@ This was done to counter all sorts of false triggers for "holding" when trying m
 - [ ] Move control to outside column, remap other keys elsewhere.
 - [x] Consider using the hold mod option on space and enter
 
-Done, implemented for testing and enjoying so far. I've used the ANY assignment option under the Special keys section within the VIA keymap section with the following code: LT(3,KC_ENT). You have to use LT as a workaround based on my research as MT in this section won't save.
+Done, implemented for testing and enjoying so far. I've used the ANY assignment option under the Special keys section within the VIA keymap section with the following code:
+```LT(3,KC_ENT)``` 
+
+You have to use LT (for Layer Toggle) as a workaround based on my research as MT in this section won't save. For example, this one will toggle layer 3 while held but return ENTER when tapped.
 - [ ] Dedicated cut/copy/paste/excel "paste special" macros
 - [x] Macro for Task Manager to maintain muscle memory for standard keyboards.
 
