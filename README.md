@@ -8,7 +8,12 @@ From the default QMK environment, use the following command to flash the most re
 qmk flash -kb sofle -km via
 ```
 
-I've also adjusted the TAPPING_TERM time to 250ms within qmk_firmware/keyboards/sofle/rev1/config.h as I found I was getting all sorts of false triggers for "holding" when trying mod-taps on the thumbs.
+I've also adjusted the TAPPING_TERM time to 250ms within: 
+```
+qmk_firmware/keyboards/sofle/rev1/config.h
+``` 
+
+This was done to counter all sorts of false triggers for "holding" when trying mod-taps on the thumbs. For whatever reason the default on the Sofle is 100ms instead of the QMK default of 200.
 
 
 ## To Do List
